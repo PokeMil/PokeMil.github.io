@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%23e23d3d%22/><path d=%22M4 50h92%22 stroke=%22%23000%22 stroke-width=%2212%22/><circle cx=%2250%22 cy=%2250%22 r=%2218%22 fill=%22white%22 stroke=%22000%22 stroke-width=%226%22/></svg>">
+  <!-- Use the logo file as the site icon -->
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,12 +20,14 @@
         <img class="brand__logo" src="logo.png" alt="PokéMilStore logo" />
         <div>
           <h1 class="brand__title">PokéMilStore</h1>
-          <p class="brand__tagline">Japanese Pokémon Cards – Singles, Graded, Sealed</p>
+          <!-- Tagline removed per request -->
         </div>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#buy">Where to Buy</a>
+        <a href="#cardmarket">Cardmarket</a>
+        <a href="#vinted">Vinted</a>
         <a href="#socials">Socials</a>
         <a href="#buying-collections">Buying Collections</a>
       </nav>
@@ -48,7 +51,7 @@
       <div class="container grid-2">
         <div>
           <h3>About</h3>
-          <p>PokéMilStore is a niche Pokémon card shop focused on <strong>Japanese</strong> cards. We hand‑pick inventory, verify condition carefully, and pack with care. <strong>Singles</strong> are listed on <a href="https://www.cardmarket.com" target="_blank" rel="noopener">Cardmarket</a>, while <strong>graded</strong> and <strong>sealed</strong> items are available on <a href="https://www.vinted.com" target="_blank" rel="noopener">Vinted</a>.</p>
+          <p>PokéMilStore is a niche Pokémon card shop focused on <strong>Japanese</strong> cards. We hand-pick inventory, verify condition carefully, and pack with care. <strong>Singles</strong> are listed on <a href="https://www.cardmarket.com" target="_blank" rel="noopener">Cardmarket</a>, while <strong>graded</strong> and <strong>sealed</strong> items are available on <a href="https://www.vinted.com" target="_blank" rel="noopener">Vinted</a>.</p>
         </div>
         <aside class="card note">
           <h4>Fast facts</h4>
@@ -68,7 +71,6 @@
         <div class="market-cards">
           <a class="market-card" href="https://www.cardmarket.com" target="_blank" rel="noopener" aria-label="Cardmarket for singles">
             <div class="market-card__icon" aria-hidden="true">
-              <!-- Pokéball SVG -->
               <svg viewBox="0 0 100 100" role="img" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="currentColor" opacity="0.2"/><path d="M4 50h92" stroke="currentColor" stroke-width="10"/><circle cx="50" cy="50" r="16" fill="none" stroke="currentColor" stroke-width="8"/></svg>
             </div>
             <h4>Cardmarket</h4>
@@ -77,7 +79,6 @@
 
           <a class="market-card" href="https://www.vinted.com" target="_blank" rel="noopener" aria-label="Vinted for graded and sealed">
             <div class="market-card__icon" aria-hidden="true">
-              <!-- Slab/box SVG -->
               <svg viewBox="0 0 100 100" role="img" aria-hidden="true">
                 <rect x="18" y="8" width="64" height="84" rx="8" ry="8" stroke="currentColor" fill="none" stroke-width="8"/>
                 <rect x="28" y="24" width="44" height="54" rx="4" ry="4" fill="currentColor" opacity="0.15"/>
@@ -87,6 +88,34 @@
             <p>Graded slabs and sealed products with buyer protection.</p>
           </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Dedicated section for Cardmarket image -->
+    <section id="cardmarket" class="section">
+      <div class="container">
+        <h3>Cardmarket</h3>
+        <p>Browse all Japanese singles on our Cardmarket store.</p>
+        <a class="btn btn--primary" href="https://www.cardmarket.com" target="_blank" rel="noopener">Go to Cardmarket</a>
+        <figure class="image-frame">
+          <!-- Replace the image below with your own (e.g., cardmarket.jpg). Keep the class 'image-cover'. -->
+          <img class="image-cover" alt="Cardmarket storefront preview"
+               src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23fff3f3'/><stop offset='1' stop-color='%23ffffff'/></linearGradient></defs><rect width='1200' height='600' fill='url(%23g)'/><g fill='%23e23d3d'><circle cx='100' cy='100' r='12'/><circle cx='140' cy='100' r='12'/><circle cx='180' cy='100' r='12'/></g><rect x='100' y='180' width='1000' height='280' rx='16' fill='none' stroke='%23e23d3d' stroke-width='8'/><text x='600' y='340' font-family='Poppins, Arial' font-size='48' text-anchor='middle' fill='%233a3a3c'>Your Cardmarket image here</text></svg>">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Dedicated section for Vinted image -->
+    <section id="vinted" class="section section--alt">
+      <div class="container">
+        <h3>Vinted</h3>
+        <p>Find our graded slabs and sealed products on Vinted.</p>
+        <a class="btn btn--outline" href="https://www.vinted.com" target="_blank" rel="noopener">Go to Vinted</a>
+        <figure class="image-frame">
+          <!-- Replace the image below with your own (e.g., vinted.jpg). Keep the class 'image-cover'. -->
+          <img class="image-cover" alt="Vinted shop preview"
+               src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23ffffff'/><stop offset='1' stop-color='%23fff3f3'/></linearGradient></defs><rect width='1200' height='600' fill='url(%23g)'/><g fill='%23e23d3d'><circle cx='100' cy='100' r='12'/><circle cx='140' cy='100' r='12'/><circle cx='180' cy='100' r='12'/></g><rect x='100' y='180' width='1000' height='280' rx='16' fill='none' stroke='%23c53131' stroke-width='8'/><text x='600' y='340' font-family='Poppins, Arial' font-size='48' text-anchor='middle' fill='%233a3a3c'>Your Vinted image here</text></svg>">
+        </figure>
       </div>
     </section>
 
@@ -139,7 +168,6 @@
     <noscript>© 2025 PokéMilStore</noscript>
   </footer>
 
-  <!-- Tiny inline script for dynamic year only; remove if you prefer a fixed year -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
