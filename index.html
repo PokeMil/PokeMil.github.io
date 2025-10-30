@@ -1,52 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PokeMil — Home</title>
-  <meta name="description" content="PokeMil personal site" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="assets/img/favicon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PokéMilStore — Japanese Pokémon Cards</title>
+  <meta name="description" content="PokéMilStore sells Japanese Pokémon cards: singles on Cardmarket, graded & sealed on Vinted. We also buy full collections.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%23e23d3d%22/><path d=%22M4 50h92%22 stroke=%22%23000%22 stroke-width=%2212%22/><circle cx=%2250%22 cy=%2250%22 r=%2218%22 fill=%22white%22 stroke=%22000%22 stroke-width=%226%22/></svg>">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container">
-      <h1 class="site-title"><a href="/">PokeMil</a></h1>
-      <nav class="site-nav">
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
-        <a href="https://github.com/PokeMil" target="_blank" rel="noopener">GitHub</a>
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand__logo" src="logo.png" alt="PokéMilStore logo" />
+        <div>
+          <h1 class="brand__title">PokéMilStore</h1>
+          <p class="brand__tagline">Japanese Pokémon Cards – Singles, Graded, Sealed</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#buy">Where to Buy</a>
+        <a href="#socials">Socials</a>
+        <a href="#buying-collections">Buying Collections</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="main">
     <section class="hero">
-      <h2>Hello — I'm PokeMil</h2>
-      <p>Welcome to my site. I build projects, explore open source, and share what I learn.</p>
-      <p><a class="btn" href="/projects.html">See projects</a></p>
+      <div class="container hero__inner">
+        <h2>Your hub for Japanese Pokémon cards.</h2>
+        <p>Shop authentic Japanese singles, graded slabs, and sealed products. Safe shipping, clear photos, and friendly service.</p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="https://www.cardmarket.com" target="_blank" rel="noopener">Shop Singles on Cardmarket</a>
+          <a class="btn btn--outline" href="https://www.vinted.com" target="_blank" rel="noopener">Graded &amp; Sealed on Vinted</a>
+        </div>
+      </div>
+      <div class="pokeball" aria-hidden="true"></div>
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h3>Featured Project</h3>
-        <p>Brief description of a project. Add links and screenshots in the Projects page.</p>
-        <p><a href="/projects.html">More</a></p>
-      </article>
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h3>About</h3>
+          <p>PokéMilStore is a niche Pokémon card shop focused on <strong>Japanese</strong> cards. We hand‑pick inventory, verify condition carefully, and pack with care. <strong>Singles</strong> are listed on <a href="https://www.cardmarket.com" target="_blank" rel="noopener">Cardmarket</a>, while <strong>graded</strong> and <strong>sealed</strong> items are available on <a href="https://www.vinted.com" target="_blank" rel="noopener">Vinted</a>.</p>
+        </div>
+        <aside class="card note">
+          <h4>Fast facts</h4>
+          <ul>
+            <li>Focus: Japanese TCG</li>
+            <li>Careful condition notes</li>
+            <li>Tracked shipping available</li>
+            <li>Friendly buyer communication</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-      <article class="card">
-        <h3>Blog (coming soon)</h3>
-        <p>Add posts as simple HTML or use a generator if you'd like a full blog structure.</p>
-      </article>
+    <section id="buy" class="section section--alt">
+      <div class="container">
+        <h3>Where to Buy</h3>
+        <div class="market-cards">
+          <a class="market-card" href="https://www.cardmarket.com" target="_blank" rel="noopener" aria-label="Cardmarket for singles">
+            <div class="market-card__icon" aria-hidden="true">
+              <!-- Pokéball SVG -->
+              <svg viewBox="0 0 100 100" role="img" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="currentColor" opacity="0.2"/><path d="M4 50h92" stroke="currentColor" stroke-width="10"/><circle cx="50" cy="50" r="16" fill="none" stroke="currentColor" stroke-width="8"/></svg>
+            </div>
+            <h4>Cardmarket</h4>
+            <p>All singles—organized, graded by condition, and updated frequently.</p>
+          </a>
+
+          <a class="market-card" href="https://www.vinted.com" target="_blank" rel="noopener" aria-label="Vinted for graded and sealed">
+            <div class="market-card__icon" aria-hidden="true">
+              <!-- Slab/box SVG -->
+              <svg viewBox="0 0 100 100" role="img" aria-hidden="true">
+                <rect x="18" y="8" width="64" height="84" rx="8" ry="8" stroke="currentColor" fill="none" stroke-width="8"/>
+                <rect x="28" y="24" width="44" height="54" rx="4" ry="4" fill="currentColor" opacity="0.15"/>
+              </svg>
+            </div>
+            <h4>Vinted</h4>
+            <p>Graded slabs and sealed products with buyer protection.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="socials" class="section">
+      <div class="container">
+        <h3>Socials</h3>
+        <p>Follow along for new arrivals, mail days, and collection spotlights.</p>
+        <div class="socials">
+          <a class="socials__btn" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.1 41.1 0 0 0 0 12c0 5.8.5 5.8.5 5.8a4 4 0 0 0 2.8 2.8C4.9 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8S24 17.8 24 12s-.5-5.8-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z"/></svg>
+            <span>YouTube</span>
+          </a>
+          <a class="socials__btn" href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm6.5-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buying-collections" class="section section--accent">
+      <div class="container grid-2">
+        <div>
+          <h3>Buying Collections</h3>
+          <p>Downsizing or leaving the hobby? We buy full Pokémon card collections—bulk, singles, sealed, and graded. Fair offers, fast payment.</p>
+          <p><a class="btn btn--light" href="mailto:hello@pokemil.store?subject=Sell%20my%20Pok%C3%A9mon%20collection&body=Hi%20Pok%C3%A9MilStore%2C%20I%27d%20like%20to%20sell%20my%20collection.%20Here%20are%20the%20details%3A">Contact us by email</a></p>
+        </div>
+        <aside class="card">
+          <h4>To speed things up</h4>
+          <ul>
+            <li>Photos of highlights &amp; condition</li>
+            <li>Approximate card count</li>
+            <li>Any graded slabs</li>
+            <li>Your location for shipping</li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> PokeMil — Built with GitHub Pages</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> PokéMilStore. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="mailto:hello@pokemil.store" aria-label="Email">Email</a>
+      </div>
     </div>
+    <noscript>© 2025 PokéMilStore</noscript>
   </footer>
 
+  <!-- Tiny inline script for dynamic year only; remove if you prefer a fixed year -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
