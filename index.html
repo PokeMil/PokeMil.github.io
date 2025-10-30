@@ -2,17 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PokeMilStore — Japanese Pokémon Cards</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PokeMil — Home</title>
+  <meta name="description" content="PokeMil personal site" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png" />
 </head>
 <body>
-  <header><h1>PokeMilStore</h1></header>
-  <main>
-    <p>Specialised in authentic Japanese Pokémon cards. Singles • Sealed • Graded.</p>
-    <a href="#contact">Contact</a>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">PokeMil</a></h1>
+      <nav class="site-nav">
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="https://github.com/PokeMil" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hello — I'm PokeMil</h2>
+      <p>Welcome to my site. I build projects, explore open source, and share what I learn.</p>
+      <p><a class="btn" href="/projects.html">See projects</a></p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Featured Project</h3>
+        <p>Brief description of a project. Add links and screenshots in the Projects page.</p>
+        <p><a href="/projects.html">More</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Blog (coming soon)</h3>
+        <p>Add posts as simple HTML or use a generator if you'd like a full blog structure.</p>
+      </article>
+    </section>
   </main>
-  <footer>&copy; <span id="y"></span> PokeMilStore</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PokeMil — Built with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
