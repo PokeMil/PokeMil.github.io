@@ -19,14 +19,11 @@
         <img class="brand__logo" src="logo.png" alt="PokéMilStore logo" width="176" height="176" />
         <div>
           <h1 class="brand__title">PokéMilStore</h1>
-          <p class="brand__subtitle">Store of PokéMil Store</p>
         </div>
       </div>
       <nav class="site-nav" aria-label="Primary">
+        <a href="#buy-cards">Buy Cards</a>
         <a href="#about">About</a>
-        <a href="#cardmarket">Cardmarket</a>
-        <a href="#vinted">Vinted</a>
-        <a href="#stats">Stats</a>
         <a href="#socials">Socials</a>
         <a href="#buying-collections">Buying Collections</a>
       </nav>
@@ -34,16 +31,22 @@
   </header>
 
   <main id="main">
+    <!-- New small heading / intro -->
+    <section class="section section--tight" id="buy-cards">
+      <div class="container section-intro">
+        <h2 class="page-heading">Buy cards</h2>
+        <p class="lead-text">Singles on Cardmarket. Graded &amp; sealed on Vinted.</p>
+      </div>
+    </section>
+
     <!-- Split Cards (card-like blocks) -->
     <section class="section split-cards" aria-label="Storefronts">
       <div class="container split-grid">
         <!-- Cardmarket block -->
         <a class="split-card" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener">
-          <img src="cardmarket-hero.jpg" alt="Cardmarket storefront preview" class="split-card__bg" loading="eager">
           <div class="split-card__overlay" aria-hidden="true"></div>
           <div class="split-card__content">
             <div class="split-card__brand">
-              <!-- place your Cardmarket logo here -->
               <img src="cardmarket-logo.png" alt="Cardmarket logo">
             </div>
             <h2>Cardmarket</h2>
@@ -54,11 +57,9 @@
 
         <!-- Vinted block -->
         <a class="split-card" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener">
-          <img src="vinted-hero.jpg" alt="Vinted shop preview" class="split-card__bg" loading="eager">
           <div class="split-card__overlay" aria-hidden="true"></div>
           <div class="split-card__content">
             <div class="split-card__brand">
-              <!-- place your Vinted logo here -->
               <img src="vinted-logo.png" alt="Vinted logo">
             </div>
             <h2>Vinted</h2>
@@ -105,46 +106,16 @@
       </div>
     </section>
 
-    <!-- Cardmarket section -->
-    <section id="cardmarket" class="section">
-      <div class="container">
-        <div class="section-head">
-          <img class="section-brand" src="cardmarket-logo.png" alt="Cardmarket logo">
-          <h3>Cardmarket</h3>
-        </div>
-        <p>Browse all Japanese singles on our Cardmarket store.</p>
-        <a class="btn btn--primary" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener">Go to Cardmarket</a>
-        <figure class="image-frame">
-          <img class="image-cover" alt="Cardmarket storefront large preview" src="cardmarket-hero.jpg" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
-    <!-- Vinted section -->
-    <section id="vinted" class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <img class="section-brand" src="vinted-logo.png" alt="Vinted logo">
-          <h3>Vinted</h3>
-        </div>
-        <p>Find our graded slabs and sealed products on Vinted.</p>
-        <a class="btn btn--outline" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener">Go to Vinted</a>
-        <figure class="image-frame">
-          <img class="image-cover" alt="Vinted shop large preview" src="vinted-hero.jpg" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
     <section id="socials" class="section">
       <div class="container">
         <h3>Socials</h3>
         <p>Follow along for new arrivals, mail days, and collection spotlights.</p>
         <div class="socials">
-          <a class="socials__btn" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+          <a class="socials__btn" href="https://www.youtube.com/@Pok%C3%A9MilStore" target="_blank" rel="noopener" aria-label="YouTube">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.1 41.1 0 0 0 0 12c0 5.8.5 5.8.5 5.8a4 4 0 0 0 2.8 2.8C4.9 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8S24 17.8 24 12s-.5-5.8-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z"/></svg>
             <span>YouTube</span>
           </a>
-          <a class="socials__btn" href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <a class="socials__btn" href="https://www.instagram.com/pokemilstoreofficial/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm6.5-2.75a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg>
             <span>Instagram</span>
           </a>
@@ -176,9 +147,9 @@
     <div class="container footer-inner">
       <p>© <span id="year"></span> PokéMilStore. All rights reserved.</p>
       <div class="footer-socials">
-        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="mailto:hello@pokemil.store" aria-label="Email">Email</a>
+        <a href="https://www.youtube.com/@Pok%C3%A9MilStore" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+        <a href="https://www.instagram.com/pokemilstoreofficial/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="mailto:info@pokemilstore.be" aria-label="Email">Email</a>
       </div>
     </div>
     <noscript>© 2025 PokéMilStore</noscript>
