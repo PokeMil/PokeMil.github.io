@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Use the logo file as the site icon -->
   <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
@@ -17,17 +16,17 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img class="brand__logo" src="logo.png" alt="PokéMilStore logo" />
+        <img class="brand__logo" src="logo.png" alt="PokéMilStore logo" width="176" height="176" />
         <div>
           <h1 class="brand__title">PokéMilStore</h1>
-          <!-- Tagline removed per request -->
+          <p class="brand__subtitle">Store of PokéMil Store</p>
         </div>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#buy">Where to Buy</a>
         <a href="#cardmarket">Cardmarket</a>
         <a href="#vinted">Vinted</a>
+        <a href="#stats">Stats</a>
         <a href="#socials">Socials</a>
         <a href="#buying-collections">Buying Collections</a>
       </nav>
@@ -35,16 +34,39 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero__inner">
-        <h2>Your hub for Japanese Pokémon cards.</h2>
-        <p>Shop authentic Japanese singles, graded slabs, and sealed products. Safe shipping, clear photos, and friendly service.</p>
-        <div class="cta-row">
-          <a class="btn btn--primary" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener">Shop Singles on Cardmarket</a>
-          <a class="btn btn--outline" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener">Graded &amp; Sealed on Vinted</a>
-        </div>
+    <!-- Split Cards (card-like blocks) -->
+    <section class="section split-cards" aria-label="Storefronts">
+      <div class="container split-grid">
+        <!-- Cardmarket block -->
+        <a class="split-card" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener">
+          <img src="cardmarket-hero.jpg" alt="Cardmarket storefront preview" class="split-card__bg" loading="eager">
+          <div class="split-card__overlay" aria-hidden="true"></div>
+          <div class="split-card__content">
+            <div class="split-card__brand">
+              <!-- Replace with your Cardmarket logo file -->
+              <img src="cardmarket-logo.png" alt="Cardmarket logo">
+            </div>
+            <h2>Cardmarket</h2>
+            <p>Shop all Japanese singles — organized &amp; condition-graded.</p>
+            <span class="btn btn--light">Shop Cardmarket</span>
+          </div>
+        </a>
+
+        <!-- Vinted block -->
+        <a class="split-card" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener">
+          <img src="vinted-hero.jpg" alt="Vinted shop preview" class="split-card__bg" loading="eager">
+          <div class="split-card__overlay" aria-hidden="true"></div>
+          <div class="split-card__content">
+            <div class="split-card__brand">
+              <!-- Replace with your Vinted logo file -->
+              <img src="vinted-logo.png" alt="Vinted logo">
+            </div>
+            <h2>Vinted</h2>
+            <p>Graded slabs &amp; sealed products with buyer protection.</p>
+            <span class="btn btn--light">Shop Vinted</span>
+          </div>
+        </a>
       </div>
-      <div class="pokeball" aria-hidden="true"></div>
     </section>
 
     <section id="about" class="section">
@@ -65,56 +87,50 @@
       </div>
     </section>
 
-    <section id="buy" class="section section--alt">
-      <div class="container">
-        <h3>Where to Buy</h3>
-        <div class="market-cards">
-          <a class="market-card" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener" aria-label="Cardmarket for singles">
-            <div class="market-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 100 100" role="img" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="currentColor" opacity="0.2"/><path d="M4 50h92" stroke="currentColor" stroke-width="10"/><circle cx="50" cy="50" r="16" fill="none" stroke="currentColor" stroke-width="8"/></svg>
-            </div>
-            <h4>Cardmarket</h4>
-            <p>All singles—organized, graded by condition, and updated frequently.</p>
-          </a>
-
-          <a class="market-card" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener" aria-label="Vinted for graded and sealed">
-            <div class="market-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 100 100" role="img" aria-hidden="true">
-                <rect x="18" y="8" width="64" height="84" rx="8" ry="8" stroke="currentColor" fill="none" stroke-width="8"/>
-                <rect x="28" y="24" width="44" height="54" rx="4" ry="4" fill="currentColor" opacity="0.15"/>
-              </svg>
-            </div>
-            <h4>Vinted</h4>
-            <p>Graded slabs and sealed products with buyer protection.</p>
-          </a>
+    <!-- New stats / trust section -->
+    <section id="stats" class="section section--alt">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <p class="stat-card__number">1,500+</p>
+          <p class="stat-card__label">Total sales across Cardmarket &amp; Vinted</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-card__number">Japan-focused</p>
+          <p class="stat-card__label">Specialized in JP Pokémon cards</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-card__number">Trusted</p>
+          <p class="stat-card__label">Responsive and careful packaging</p>
         </div>
       </div>
     </section>
 
-    <!-- Dedicated section for Cardmarket image -->
+    <!-- Cardmarket section with space for brand logo -->
     <section id="cardmarket" class="section">
       <div class="container">
-        <h3>Cardmarket</h3>
+        <div class="section-head">
+          <img class="section-brand" src="cardmarket-logo.png" alt="Cardmarket logo">
+          <h3>Cardmarket</h3>
+        </div>
         <p>Browse all Japanese singles on our Cardmarket store.</p>
         <a class="btn btn--primary" href="https://www.cardmarket.com/en/Pokemon/Users/PokeMilStore" target="_blank" rel="noopener">Go to Cardmarket</a>
         <figure class="image-frame">
-          <!-- Replace the image below with your own (e.g., cardmarket.jpg). Keep the class 'image-cover'. -->
-          <img class="image-cover" alt="Cardmarket storefront preview"
-               src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23fff3f3'/><stop offset='1' stop-color='%23ffffff'/></linearGradient></defs><rect width='1200' height='600' fill='url(%23g)'/><g fill='%23e23d3d'><circle cx='100' cy='100' r='12'/><circle cx='140' cy='100' r='12'/><circle cx='180' cy='100' r='12'/></g><rect x='100' y='180' width='1000' height='280' rx='16' fill='none' stroke='%23e23d3d' stroke-width='8'/><text x='600' y='340' font-family='Poppins, Arial' font-size='48' text-anchor='middle' fill='%233a3a3c'>Your Cardmarket image here</text></svg>">
+          <img class="image-cover" alt="Cardmarket storefront large preview" src="cardmarket-hero.jpg" loading="lazy">
         </figure>
       </div>
     </section>
 
-    <!-- Dedicated section for Vinted image -->
+    <!-- Vinted section with space for brand logo -->
     <section id="vinted" class="section section--alt">
       <div class="container">
-        <h3>Vinted</h3>
+        <div class="section-head">
+          <img class="section-brand" src="vinted-logo.png" alt="Vinted logo">
+          <h3>Vinted</h3>
+        </div>
         <p>Find our graded slabs and sealed products on Vinted.</p>
         <a class="btn btn--outline" href="https://www.vinted.be/member/143922193" target="_blank" rel="noopener">Go to Vinted</a>
         <figure class="image-frame">
-          <!-- Replace the image below with your own (e.g., vinted.jpg). Keep the class 'image-cover'. -->
-          <img class="image-cover" alt="Vinted shop preview"
-               src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%23ffffff'/><stop offset='1' stop-color='%23fff3f3'/></linearGradient></defs><rect width='1200' height='600' fill='url(%23g)'/><g fill='%23e23d3d'><circle cx='100' cy='100' r='12'/><circle cx='140' cy='100' r='12'/><circle cx='180' cy='100' r='12'/></g><rect x='100' y='180' width='1000' height='280' rx='16' fill='none' stroke='%23c53131' stroke-width='8'/><text x='600' y='340' font-family='Poppins, Arial' font-size='48' text-anchor='middle' fill='%233a3a3c'>Your Vinted image here</text></svg>">
+          <img class="image-cover" alt="Vinted shop large preview" src="vinted-hero.jpg" loading="lazy">
         </figure>
       </div>
     </section>
